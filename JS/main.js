@@ -78,16 +78,17 @@ $(document).ready(function() {
               $('.animation').stop();
               $('#mark').html("Finished!");
               $('#blue').css("-webkit-animation", "paused");
-              
+              alert(runningDistance);
 
   }
   if (computerDistance>=raceTrack)
   {
 
-    console.log(computerDistance);
+
     $('#green').stop();
     $('#mark').text("Sorry!");
     $('#blue').position({left: 0,});
+    alert(computerDistance);
   }
 
     });
