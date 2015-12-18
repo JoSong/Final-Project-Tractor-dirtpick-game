@@ -1,0 +1,180 @@
+html body
+{   
+    height: 50%;
+    background-image: url("../images/skybg.jpg");
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+}
+.report{
+    color: #66b2ff;
+    background-color: #e5ffff;
+    border:solid 4px white;
+    opacity:0.7;
+    font-size: 14px;
+    font-family: arial;
+    font-style: italic;
+    width:25%;
+    height: 150px;
+    float: right;
+    margin-right: 30px;
+    padding-left: 5px;
+    
+}
+.tractor{
+    width: 100%;
+
+    float: left;
+    background-image: url(../images/grass.png);
+    background-position: bottom;
+    background-size:100% 100%;
+    background-repeat: repeat-x;
+    position: absolute;
+    left: 0;
+    top:510px;
+    bottom:0;
+    border-right: 8px dashed green;
+    box-sizing: border-box;
+    
+
+}
+
+img#trolley{
+	width: 120px;
+	height: 60px;
+}
+
+#green{
+
+    position: absolute;
+    left: 0;
+   bottom: 5px;
+    
+  
+}
+
+#blue{
+    
+
+    position: relative;
+    -webkit-animation:moving 40s ease ;
+}
+
+@-webkit-keyframes moving{
+
+    0% { left: 0;}
+
+    25% {left: 300px;}
+
+    50%  {left: 600px;}
+
+    75%  {left: 900px;}
+
+    100% {left: 100%;}
+}
+
+img.dirtPicked{
+
+	width: 25px;
+	height: 25px;
+    opacity: 0.8;
+
+
+   
+}
+
+#scored{
+
+    display: inline;
+}
+.dirt, #green{
+
+    display: inline;
+}
+
+.dirt{
+    left:150px;
+    bottom:5px;
+    position: absolute;
+
+}
+
+img#empty,img#full{
+
+	width: 35px;
+	height: 35px;
+   
+   
+}
+
+.pick{
+
+    position: absolute;
+    top:450px;
+    left:100px;
+ 
+}
+
+.start,.finish{
+    display: none;
+    margin: 0;
+    position:absolute;
+}
+.start{
+
+    left:15px;
+    clear: both;
+}
+.finish{
+    left:200px;
+    clear: both;
+}
+
+
+.animation{
+    width: 90px;
+    height:45px;
+    border:2px white solid;
+    opacity: 0.7;
+    position: absolute;
+    left:90px;
+    display:none;
+    clear: both;
+}
+
+.load{
+    
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    background-color:dodgerblue;
+    margin-top: 20px;
+    margin-left:4px;
+    padding-right: 4.5px;
+    float:left;
+    display: none;
+   
+}
+
+span.text{
+    
+    color:#ffb84d;
+    font-size:16px;
+    padding-left: 5px;
+    text-align: center;
+    font-family: arial;
+
+}
+
+
+
+
+.info
+{
+    font-size: 20px;
+    color: #00a2cc;
+    font-family: arial;
+    margin-top: 8px;
+    margin-left:10px;
+
+}
